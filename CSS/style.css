@@ -50,9 +50,7 @@ a:hover{
 .img-profile{
   border-radius: 50%;
 }
-.span{
-  text-decoration: underline;
-}
+
 
 .top-container{
   background-color: #EAF6F6;
@@ -136,3 +134,68 @@ a:hover{
   background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
   text-decoration: none;
 }
+
+/*Mobil*/
+@media screen and (min-width: 300px) and (max-width: 1024px){
+
+    h2{
+      font-size: 4rem;
+    }
+    h3{
+      font-size: 2.5rem;
+    }
+    p{
+      width: 130%;
+    }
+    .middle-container{
+      margin: 100px 0;
+    }
+    .skill-row{
+      margin-left: 150px;
+      text-align: center;
+    }
+    .intro{
+      width: 65%;
+      margin: auto;
+    }
+    .top-cloud{
+      position: absolute;
+      right: 70px;
+      top: 40px;
+    }
+    .bottom-cloud{
+      position: absolute;
+      left: 100px;
+      bottom: 300px;
+    }
+    .love-gaming{
+      font-size: 1rem;
+      width: 80%;
+      margin: auto;
+    }
+    .contact-message{
+      font-size: 1.5rem;
+      margin: 40px auto 60px;
+    }
+    .bottom-container{
+      background-color: #66BFBF;
+      padding: 50px 0 50px;
+    }
+    .footer-link{
+      text-align: center;
+      font-size: 3rem;
+    }
+    .copyright{
+      color: #EAF6F6;
+      font-size: 2rem;
+      margin: auto;
+      width: 60%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+}
+@media screen and (min-width: 1025px){
+
+}
+/*Tablet*/
