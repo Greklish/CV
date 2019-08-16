@@ -40,7 +40,28 @@ a{
   text-decoration: none;
 }
 a:hover{
-  color: #EAF6F6;
+  color: black;
+}
+nav{
+  position: fixed;
+  line-height: 60px;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+}
+nav ul{
+  float: center;
+  margin: 0;
+  background-color: #EAF6F6;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li a{
+  color: #11999E;
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  text-decoration: none;
 }
 .intro{
   width: 30%;
@@ -77,7 +98,6 @@ a:hover{
   float: right;
   margin-left: 30px;
 }
-
 .middle-container{
   margin: 100px 0;
 }
@@ -134,6 +154,12 @@ a:hover{
   background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
   text-decoration: none;
 }
+---------------------------------------------------------------------------
+.navMenu{
+  overflow: hidden;
+  background-color: #11999E;
+}
+
 
 /*Mobil*/
 @media screen and (min-width: 300px) and (max-width: 1024px){
@@ -146,6 +172,12 @@ a:hover{
     }
     p{
       width: 130%;
+    }
+    nav{
+      line-height: 120px;
+    }
+    nav ul li a{
+      font-size: 3rem;
     }
     .middle-container{
       margin: 100px 0;
@@ -161,7 +193,7 @@ a:hover{
     .top-cloud{
       position: absolute;
       right: 70px;
-      top: 40px;
+      top: 100px;
     }
     .bottom-cloud{
       position: absolute;
