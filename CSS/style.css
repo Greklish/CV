@@ -3,7 +3,7 @@ body{
   margin: 0;
   text-align: center;
   font-family: 'Merriweather', serif;
-  zoom: 120%;
+
 }
 h1{
   margin: 50px auto 0 auto;
@@ -164,7 +164,7 @@ nav ul li a{
 /*Mobil*/
 @media screen and (min-width: 300px) and (max-width: 1024px){
   body{
-    zoom: 100%;
+
   }
 
     h2{
@@ -177,10 +177,10 @@ nav ul li a{
       width: 130%;
     }
     nav{
-      line-height: 120px;
+      line-height: 60px;
     }
     nav ul li a{
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
     .middle-container{
       margin: 100px 0;
