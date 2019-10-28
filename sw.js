@@ -35,15 +35,15 @@ self.addEventListener('fetch', evt => {
     )
 })
 
-self.addEventListener('activate', evt => {
-    //console.log('Service worker activated')
-    evt.waitUntil(
-        caches.keys().then(keys => {
-            //console.log(keys)
-            return Promise.all(keys
-                .filter(key => key !== staticCacheName)
-                .map(key => caches.delete())
-            )
-        })
-    )
-})
+// self.addEventListener('activate', evt => {
+//     //console.log('Service worker activated')
+//     evt.waitUntil(
+//         caches.keys().then(keys => {
+//             //console.log(keys)
+//             return Promise.all(keys
+//                 .filter(key => key !== staticCacheName)
+//                 .map(key => caches.delete())
+//             )
+//         })
+//     )
+// })
