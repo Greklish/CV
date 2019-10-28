@@ -1,7 +1,7 @@
 {
     "short_name": "Cv",
     "name": "Cv",
-    "start_url": "/",
+    "start_url": "index.html",
     "icons": [
         {
             "src": "favicon.ico",
