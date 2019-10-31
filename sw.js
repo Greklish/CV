@@ -1,8 +1,8 @@
-const staticCache = 'site-static-v2'
+const staticCache = 'site-static-v1'
 
 // install event
 const assets = [
-    './',
+    '/',
     './index.html',
     './CSS/style.css',
     './images/cloud.png',
