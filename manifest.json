@@ -1,25 +1,21 @@
 {
-    "short_name": "Cv",
-    "name": "Cv",
-    "start_url": "index.html",
+    "name": "Simon Cv",
+    "short_name": "Simons Cv",
+    "start_url": "/index.html",
+    "display": "standalone",
     "icons": [
         {
-            "src": "favicon.ico",
-            "sizes": "64x64 32x32 24x24 16x16",
-            "type": "images/x-icon"
-        },
-        {
-            "src": "logo192.png",
+            "src": "/images/logo192.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "logo512.png",
+            "src": "/images/logo512.png",
             "type": "image/png",
             "sizes": "512x512"
         }
     ],
-    "display": "standalone",
     "theme_color": "#000000",
-    "background_color": "#48C5D6"
+    "background_color": "#48C5D6",
+    "orientation": "portrait-primary"
 }
