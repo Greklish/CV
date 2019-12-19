@@ -6,6 +6,12 @@
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
+  <!--Manifest for Pwa-->
+  <link rel="manifest" href="manifest.json">
+  <!--IOS Support-->
+  <link rel="apple-touch-icon" href="images/Icons/icon-96x96.png">
+  <meta name="apple-mobbile-web-app-status-bar" content="#aa7700">
+
   <title>Simon</title>
 </head>
 
@@ -33,21 +39,27 @@
     <div class="profile">
       <img class="img-profile" src="images/simon.jpg" alt="profile picture">
       <h2>What's up</h2>
-      <p class="intro">I am a 30 year old guy that loves programming and gaming. For the time being I´m a student in Java/webbdevelopment at Campus Mölndal and Im one year from graduation.</p>
+      <p class="intro">I am a 30 year old guy that loves programming and gaming. For the time being I´m a student in
+        Java/webbdevelopment at Campus Mölndal and Im one year from graduation.</p>
     </div>
 
     <hr>
     <div class="skills">
       <h2>My Skills</h2>
       <div class="skill-row">
-        <img class="skill-img" src="https://media2.giphy.com/media/eJGAjgTxQkdf6sKXhu/giphy.gif?cid=790b76115d4839ce7444744c496fb582&rid=giphy.gif" alt="">
+        <img class="skill-img"
+          src="https://media2.giphy.com/media/eJGAjgTxQkdf6sKXhu/giphy.gif?cid=790b76115d4839ce7444744c496fb582&rid=giphy.gif"
+          alt="">
         <h3>Gaming & Development</h3>
-        <p>Ever since I was a little kid, I´ve fell in love with gaming and have been playing since on various platforms. My interest in development peeked in 2018 when I found my dream education. I´ve been working hard at it and my skills are growing fast. </p>
+        <p>Ever since I was a little kid, I´ve fell in love with gaming and have been playing since on various
+          platforms. My interest in development peeked in 2018 when I found my dream education. I´ve been working hard
+          at it and my skills are growing fast. </p>
       </div>
       <div class="skill-row">
         <img class="skill-img-2" src="https://media.giphy.com/media/dscTJjpsiVamjIk6nk/giphy.gif" alt="">
         <h3>Projects</h3>
-        <p>I´ve always want to work on something, either big or small like android apps or this website. Feel free to visit my Github page and look at my school work or personal creations.</p>
+        <p>I´ve always want to work on something, either big or small like android apps or this website. Feel free to
+          visit my Github page and look at my school work or personal creations.</p>
       </div>
     </div>
     <hr>
@@ -64,9 +76,24 @@
     <a class="footer-link" href="#top">Go to top</a>
     <p class="copyright">© 2019 Simon Gripencreutz</p>
   </div>
-<script type="text/javascript" src="JS/Javascript.js">
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('./sw.js').then(function (registration) {
+          console.log('Worker registration successful', registration.scope);
+        }, function (err) {
+          console.log('Worker registration failed', err);
+        }).catch(function (err) {
+          console.log(err);
+        });
+      });
+    } else {
+      console.log('Service Worker is not supported by browser.');
+    }
+  </script>
 
-</script>
+
+  </script>
 </body>
 
 </html>
