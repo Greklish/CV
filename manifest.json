@@ -5,14 +5,9 @@
     "display": "standalone",
     "icons": [
         {
-            "src": "./images/logo192.png",
-            "type": "image/png",
+            "src": "./images/favicon.ico",
+            "type": "image/ico",
             "sizes": "192x192"
-        },
-        {
-            "src": "./images/logo512.png",
-            "type": "image/png",
-            "sizes": "512x512"
         }
     ],
     "theme_color": "#000000",
