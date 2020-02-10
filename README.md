@@ -2,4 +2,4 @@
 my website cv
 
 
-https://gripencreutz.github.io/CV/
+https://gripencreutz.github.io/CV/ (Disabled)
